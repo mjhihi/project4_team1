@@ -4,17 +4,17 @@
 
 CREATE TABLE "Mushroom1" (
     "ID" int   NOT NULL,
-    "CapShape" string   NOT NULL,
-    "CapSurface" string   NOT NULL,
-    "CapColor" string   NOT NULL,
-    "Bruises" string   NOT NULL,
-    "Odor" string   NOT NULL,
-    "gill-attachment" string   NOT NULL,
-    "gill-spacing" string   NOT NULL,
-    "gill-size" string   NOT NULL,
-    "gill-color" string   NOT NULL,
-    "population" string   NOT NULL,
-    "habitat" string   NOT NULL,
+    "CapShape" VARCHAR   NOT NULL,
+    "CapSurface" VARCHAR   NOT NULL,
+    "CapColor" VARCHAR   NOT NULL,
+    "Bruises" VARCHAR   NOT NULL,
+    "Odor" VARCHAR   NOT NULL,
+    "gill-attachment" VARCHAR   NOT NULL,
+    "gill-spacing" VARCHAR   NOT NULL,
+    "gill-size" VARCHAR   NOT NULL,
+    "gill-color" VARCHAR   NOT NULL,
+    "population" VARCHAR   NOT NULL,
+    "habitat" VARCHAR   NOT NULL,
     CONSTRAINT "pk_Mushroom1" PRIMARY KEY (
         "ID"
      )
@@ -22,17 +22,17 @@ CREATE TABLE "Mushroom1" (
 
 CREATE TABLE "Mushroom2" (
     "ID" int   NOT NULL,
-    "stalk-shape" string   NOT NULL,
-    "stalk-root" string   NOT NULL,
-    "stalk-surface-above-ring" string   NOT NULL,
-    "stalk-surface-below-ring" string   NOT NULL,
-    "stalk-color-above-ring" string   NOT NULL,
-    "stalk-color-below-ring" string   NOT NULL,
-    "veil-type" string   NOT NULL,
-    "veil-color" string   NOT NULL,
-    "ring-number" string   NOT NULL,
-    "ring-type" string   NOT NULL,
-    "spore-print-color" string   NOT NULL,
+    "stalk-shape" VARCHAR   NOT NULL,
+    "stalk-root" VARCHAR   NOT NULL,
+    "stalk-surface-above-ring" VARCHAR   NOT NULL,
+    "stalk-surface-below-ring" VARCHAR   NOT NULL,
+    "stalk-color-above-ring" VARCHAR   NOT NULL,
+    "stalk-color-below-ring" VARCHAR   NOT NULL,
+    "veil-type" VARCHAR   NOT NULL,
+    "veil-color" VARCHAR   NOT NULL,
+    "ring-number" VARCHAR   NOT NULL,
+    "ring-type" VARCHAR   NOT NULL,
+    "spore-print-color" VARCHAR   NOT NULL,
     CONSTRAINT "pk_Mushroom2" PRIMARY KEY (
         "ID"
      )
