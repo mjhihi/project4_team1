@@ -1,0 +1,1906 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='mushroom1.csv+ (Multiple Connections)' inline='true' name='federated.0cwpkg202gjk6m147qse80ysmzwc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mushroom1' name='textscan.0weyx4v1oso6f719rcgb70sqyrnu'>
+            <connection class='textscan' directory='C:/Users/domin/Documents/GitHub/project4_team1' filename='mushroom1.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='mushroom2' name='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6'>
+            <connection class='textscan' directory='C:/Users/domin/Documents/GitHub/project4_team1' filename='mushroom2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='class' ordinal='1' />
+            <column datatype='string' name='cap-shape' ordinal='2' />
+            <column datatype='string' name='cap-surface' ordinal='3' />
+            <column datatype='string' name='cap-color' ordinal='4' />
+            <column datatype='boolean' name='bruises' ordinal='5' />
+            <column datatype='string' name='odor' ordinal='6' />
+            <column datatype='boolean' name='gill-attachment' ordinal='7' />
+            <column datatype='string' name='gill-spacing' ordinal='8' />
+            <column datatype='string' name='gill-size' ordinal='9' />
+            <column datatype='string' name='gill-color' ordinal='10' />
+            <column datatype='string' name='population' ordinal='11' />
+            <column datatype='string' name='habitat' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='class' ordinal='1' />
+              <column datatype='string' name='cap-shape' ordinal='2' />
+              <column datatype='string' name='cap-surface' ordinal='3' />
+              <column datatype='string' name='cap-color' ordinal='4' />
+              <column datatype='boolean' name='bruises' ordinal='5' />
+              <column datatype='string' name='odor' ordinal='6' />
+              <column datatype='boolean' name='gill-attachment' ordinal='7' />
+              <column datatype='string' name='gill-spacing' ordinal='8' />
+              <column datatype='string' name='gill-size' ordinal='9' />
+              <column datatype='string' name='gill-color' ordinal='10' />
+              <column datatype='string' name='population' ordinal='11' />
+              <column datatype='string' name='habitat' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6' name='mushroom2.csv' table='[mushroom2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='class' ordinal='1' />
+              <column datatype='string' name='stalk-shape' ordinal='2' />
+              <column datatype='string' name='stalk-root' ordinal='3' />
+              <column datatype='string' name='stalk-surface-above-ring' ordinal='4' />
+              <column datatype='string' name='stalk-surface-below-ring' ordinal='5' />
+              <column datatype='string' name='stalk-color-above-ring' ordinal='6' />
+              <column datatype='string' name='stalk-color-below-ring' ordinal='7' />
+              <column datatype='string' name='veil-type' ordinal='8' />
+              <column datatype='string' name='veil-color' ordinal='9' />
+              <column datatype='string' name='ring-number' ordinal='10' />
+              <column datatype='string' name='ring-type' ordinal='11' />
+              <column datatype='string' name='spore-print-color' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ID (mushroom2.csv)]' value='[mushroom2.csv].[ID]' />
+          <map key='[ID]' value='[mushroom1.csv].[ID]' />
+          <map key='[bruises]' value='[mushroom1.csv].[bruises]' />
+          <map key='[cap-color]' value='[mushroom1.csv].[cap-color]' />
+          <map key='[cap-shape]' value='[mushroom1.csv].[cap-shape]' />
+          <map key='[cap-surface]' value='[mushroom1.csv].[cap-surface]' />
+          <map key='[class (mushroom2.csv)]' value='[mushroom2.csv].[class]' />
+          <map key='[class]' value='[mushroom1.csv].[class]' />
+          <map key='[gill-attachment]' value='[mushroom1.csv].[gill-attachment]' />
+          <map key='[gill-color]' value='[mushroom1.csv].[gill-color]' />
+          <map key='[gill-size]' value='[mushroom1.csv].[gill-size]' />
+          <map key='[gill-spacing]' value='[mushroom1.csv].[gill-spacing]' />
+          <map key='[habitat]' value='[mushroom1.csv].[habitat]' />
+          <map key='[odor]' value='[mushroom1.csv].[odor]' />
+          <map key='[population]' value='[mushroom1.csv].[population]' />
+          <map key='[ring-number]' value='[mushroom2.csv].[ring-number]' />
+          <map key='[ring-type]' value='[mushroom2.csv].[ring-type]' />
+          <map key='[spore-print-color]' value='[mushroom2.csv].[spore-print-color]' />
+          <map key='[stalk-color-above-ring]' value='[mushroom2.csv].[stalk-color-above-ring]' />
+          <map key='[stalk-color-below-ring]' value='[mushroom2.csv].[stalk-color-below-ring]' />
+          <map key='[stalk-root]' value='[mushroom2.csv].[stalk-root]' />
+          <map key='[stalk-shape]' value='[mushroom2.csv].[stalk-shape]' />
+          <map key='[stalk-surface-above-ring]' value='[mushroom2.csv].[stalk-surface-above-ring]' />
+          <map key='[stalk-surface-below-ring]' value='[mushroom2.csv].[stalk-surface-below-ring]' />
+          <map key='[veil-color]' value='[mushroom2.csv].[veil-color]' />
+          <map key='[veil-type]' value='[mushroom2.csv].[veil-type]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-shape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-shape]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-shape</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-surface</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-surface]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-surface</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-color]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-color</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bruises</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[bruises]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>bruises</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>odor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[odor]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>odor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-attachment</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[gill-attachment]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-attachment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-spacing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-spacing]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-spacing</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-size]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-size</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-color]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-color</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>habitat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[habitat]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>habitat</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (mushroom2.csv)]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class (mushroom2.csv)]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-shape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-shape]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-shape</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-root</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-root]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-root</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-surface-above-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-surface-above-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-surface-above-ring</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-surface-below-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-surface-below-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-surface-below-ring</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-color-above-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-color-above-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-color-above-ring</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-color-below-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-color-below-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-color-below-ring</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>veil-type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[veil-type]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>veil-type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>veil-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[veil-color]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>veil-color</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ring-number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ring-number]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ring-number</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ring-type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ring-type]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ring-type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spore-print-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spore-print-color]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>spore-print-color</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID (mushroom2.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='mushroom1.csv' datatype='table' name='[__tableau_internal_object_id__].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mushroom2.csv' datatype='table' name='[__tableau_internal_object_id__].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' role='measure' type='quantitative' />
+      <column caption='Bruises' datatype='boolean' name='[bruises]' role='dimension' type='nominal' />
+      <column caption='Cap-Color' datatype='string' name='[cap-color]' role='dimension' type='nominal' />
+      <column caption='Cap-Shape' datatype='string' name='[cap-shape]' role='dimension' type='nominal' />
+      <column caption='Cap-Surface' datatype='string' name='[cap-surface]' role='dimension' type='nominal' />
+      <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='Gill-Attachment' datatype='boolean' name='[gill-attachment]' role='dimension' type='nominal' />
+      <column caption='Gill-Color' datatype='string' name='[gill-color]' role='dimension' type='nominal' />
+      <column caption='Gill-Size' datatype='string' name='[gill-size]' role='dimension' type='nominal' />
+      <column caption='Gill-Spacing' datatype='string' name='[gill-spacing]' role='dimension' type='nominal' />
+      <column caption='Habitat' datatype='string' name='[habitat]' role='dimension' type='nominal' />
+      <column caption='Odor' datatype='string' name='[odor]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='string' name='[population]' role='dimension' type='nominal' />
+      <column caption='Ring-Number' datatype='string' name='[ring-number]' role='dimension' type='nominal' />
+      <column caption='Ring-Type' datatype='string' name='[ring-type]' role='dimension' type='nominal' />
+      <column caption='Spore-Print-Color' datatype='string' name='[spore-print-color]' role='dimension' type='nominal' />
+      <column caption='Stalk-Color-Above-Ring' datatype='string' name='[stalk-color-above-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Color-Below-Ring' datatype='string' name='[stalk-color-below-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Root' datatype='string' name='[stalk-root]' role='dimension' type='nominal' />
+      <column caption='Stalk-Shape' datatype='string' name='[stalk-shape]' role='dimension' type='nominal' />
+      <column caption='Stalk-Surface-Above-Ring' datatype='string' name='[stalk-surface-above-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Surface-Below-Ring' datatype='string' name='[stalk-surface-below-ring]' role='dimension' type='nominal' />
+      <column caption='Veil-Color' datatype='string' name='[veil-color]' role='dimension' type='nominal' />
+      <column caption='Veil-Type' datatype='string' name='[veil-type]' role='dimension' type='nominal' />
+      <column-instance column='[gill-color]' derivation='Attribute' name='[attr:gill-color:nk]' pivot='key' type='nominal' />
+      <column-instance column='[bruises]' derivation='None' name='[none:bruises:nk]' pivot='key' type='nominal' />
+      <column-instance column='[gill-color]' derivation='None' name='[none:gill-color:nk]' pivot='key' type='nominal' />
+      <group caption='Bruises Set' name='[Bruises Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[none:bruises:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/domin/AppData/Local/Temp/TableauTemp/#TableauTemp_0fz5nuz1i1s77v18re3ph0vi7y0t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/23/2024 10:43:23 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+            <relation name='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' table='[Extract].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[ID (mushroom2.csv)]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ID]' />
+            <map key='[ID]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[ID]' />
+            <map key='[bruises]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[bruises]' />
+            <map key='[cap-color]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-color]' />
+            <map key='[cap-shape]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-shape]' />
+            <map key='[cap-surface]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-surface]' />
+            <map key='[class (mushroom2.csv)]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[class]' />
+            <map key='[class]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[class]' />
+            <map key='[gill-attachment]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-attachment]' />
+            <map key='[gill-color]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-color]' />
+            <map key='[gill-size]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-size]' />
+            <map key='[gill-spacing]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-spacing]' />
+            <map key='[habitat]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[habitat]' />
+            <map key='[odor]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[odor]' />
+            <map key='[population]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[population]' />
+            <map key='[ring-number]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ring-number]' />
+            <map key='[ring-type]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ring-type]' />
+            <map key='[spore-print-color]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[spore-print-color]' />
+            <map key='[stalk-color-above-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-color-above-ring]' />
+            <map key='[stalk-color-below-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-color-below-ring]' />
+            <map key='[stalk-root]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-root]' />
+            <map key='[stalk-shape]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-shape]' />
+            <map key='[stalk-surface-above-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-surface-above-ring]' />
+            <map key='[stalk-surface-below-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-surface-below-ring]' />
+            <map key='[veil-color]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[veil-color]' />
+            <map key='[veil-type]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[veil-type]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-shape]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-shape</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-surface</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-surface]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-surface</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-color]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-color</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bruises</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[bruises]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>bruises</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>odor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[odor]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>odor</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-attachment</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[gill-attachment]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-attachment</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-spacing</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-spacing]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-spacing</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-size]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-size</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-color]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-color</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>habitat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[habitat]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>habitat</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID (mushroom2.csv)]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class (mushroom2.csv)]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-shape]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-shape</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-root</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-root]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-root</remote-alias>
+              <ordinal>16</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-surface-above-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-surface-above-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-surface-above-ring</remote-alias>
+              <ordinal>17</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-surface-below-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-surface-below-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-surface-below-ring</remote-alias>
+              <ordinal>18</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-color-above-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-color-above-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-color-above-ring</remote-alias>
+              <ordinal>19</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-color-below-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-color-below-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-color-below-ring</remote-alias>
+              <ordinal>20</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>veil-type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[veil-type]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>veil-type</remote-alias>
+              <ordinal>21</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>veil-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[veil-color]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>veil-color</remote-alias>
+              <ordinal>22</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ring-number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ring-number]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ring-number</remote-alias>
+              <ordinal>23</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ring-type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ring-type]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ring-type</remote-alias>
+              <ordinal>24</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spore-print-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spore-print-color]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>spore-print-color</remote-alias>
+              <ordinal>25</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:bruises:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:gill-color:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;r&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;b&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;k&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;u&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;n&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;e&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;o&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;w&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;p&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;g&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;y&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;h&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:gill-color:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;r&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;b&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;k&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;u&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;n&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;e&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;o&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;w&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;p&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;g&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;y&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;h&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mushroom1.csv' id='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D'>
+            <properties context=''>
+              <relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='class' ordinal='1' />
+                  <column datatype='string' name='cap-shape' ordinal='2' />
+                  <column datatype='string' name='cap-surface' ordinal='3' />
+                  <column datatype='string' name='cap-color' ordinal='4' />
+                  <column datatype='boolean' name='bruises' ordinal='5' />
+                  <column datatype='string' name='odor' ordinal='6' />
+                  <column datatype='boolean' name='gill-attachment' ordinal='7' />
+                  <column datatype='string' name='gill-spacing' ordinal='8' />
+                  <column datatype='string' name='gill-size' ordinal='9' />
+                  <column datatype='string' name='gill-color' ordinal='10' />
+                  <column datatype='string' name='population' ordinal='11' />
+                  <column datatype='string' name='habitat' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+            </properties>
+          </object>
+          <object caption='mushroom2.csv' id='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B'>
+            <properties context=''>
+              <relation connection='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6' name='mushroom2.csv' table='[mushroom2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='class' ordinal='1' />
+                  <column datatype='string' name='stalk-shape' ordinal='2' />
+                  <column datatype='string' name='stalk-root' ordinal='3' />
+                  <column datatype='string' name='stalk-surface-above-ring' ordinal='4' />
+                  <column datatype='string' name='stalk-surface-below-ring' ordinal='5' />
+                  <column datatype='string' name='stalk-color-above-ring' ordinal='6' />
+                  <column datatype='string' name='stalk-color-below-ring' ordinal='7' />
+                  <column datatype='string' name='veil-type' ordinal='8' />
+                  <column datatype='string' name='veil-color' ordinal='9' />
+                  <column datatype='string' name='ring-number' ordinal='10' />
+                  <column datatype='string' name='ring-type' ordinal='11' />
+                  <column datatype='string' name='spore-print-color' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' table='[Extract].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[ID]' />
+              <expression op='[ID (mushroom2.csv)]' />
+            </expression>
+            <first-end-point object-id='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' />
+            <second-end-point object-id='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column-instance column='[class]' derivation='Count' name='[cnt:class:qk]' pivot='key' type='quantitative' />
+            <column caption='Gill-Size' datatype='string' name='[gill-size]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='None' name='[none:class (mushroom2.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[gill-size]' derivation='None' name='[none:gill-size:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class:qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-size:nk]</cols>
+      </table>
+      <simple-id uuid='{3771F89B-0251-4B6C-B8F0-945248B214EA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='Count' name='[cnt:class (mushroom2.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Gill-Color' datatype='string' name='[gill-color]' role='dimension' type='nominal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gill-color]' derivation='None' name='[none:gill-color:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class (mushroom2.csv):qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-color:nk]</cols>
+      </table>
+      <simple-id uuid='{FF43DC0B-FA1D-4F20-8661-32E220433AE8}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Bruises' datatype='boolean' name='[bruises]' role='dimension' type='nominal' />
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='Count' name='[cnt:class (mushroom2.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bruises]' derivation='None' name='[none:bruises:nk]' pivot='key' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='None' name='[none:class (mushroom2.csv):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffbe7d' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class (mushroom2.csv):qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:bruises:nk]</cols>
+      </table>
+      <simple-id uuid='{8777B9AC-D40F-42A7-8EFC-926B9D41AD30}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Gill Size and Edibility' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='Gill Color and Edibility' captured-sheet='Sheet 2' id='2' />
+                  <story-point caption='Bruises and Edibility' captured-sheet='Sheet 3' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{5BB75D32-1630-4439-8756-CD311B4A02CC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-size:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7BFC1BD0-0457-4E46-AF44-5628A6F717FD}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-color:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6E6F42A2-AB80-4F1D-A173-9493E7615383}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[io:Bruises Set:nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:bruises:nk]</field>
+            <field>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0123BC11-ED8B-4FCA-A95C-C27E87D86C46}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{95F3601C-DA38-40D8-83DD-0FB03F960B23}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      f29cLFpCJ6zkAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      8e0l+v8IuoVr8XKySQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      D7rAehxQzPERAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

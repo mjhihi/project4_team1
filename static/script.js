@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const mappings = {
         capShape: { b: 'bell', c: 'conical', x: 'convex', f: 'flat', k: 'knobbed', s: 'sunken' },
@@ -27,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function populateDropdown(id, options) {
         const select = document.getElementById(id);
+        if (!select) {
+            console.error(`Dropdown with id ${id} not found`);
+            return;
+        }
         for (const [value, text] of Object.entries(options)) {
             const option = document.createElement('option');
             option.value = value;
@@ -39,53 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
         populateDropdown(id, options);
     }
 
-    function loadCSV(file, callback) {
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', file, true);
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                console.log(`${file} data loaded successfully`);
-                callback(xhr.responseText);
-            } else {
-                console.error(`Error loading ${file}`);
-            }
-        };
-        xhr.onerror = function () {
-            console.error('Request error');
-        };
-        xhr.send();
-    }
-
-    function parseCSV(data) {
-        const lines = data.split('\n');
-        const result = [];
-        const headers = lines[0].split(',');
-
-        for (let i = 1; i < lines.length; i++) {
-            const obj = {};
-            const currentline = lines[i].split(',');
-
-            for (let j = 0; j < headers.length; j++) {
-                obj[headers[j]] = currentline[j];
-            }
-            result.push(obj);
-        }
-        return result;
-    }
-
-    let mushrooms = [];
-
-    loadCSV('mushroom1.csv', function (data) {
-        mushrooms = parseCSV(data);
-        console.log('Parsed mushroom1 data:', mushrooms);
-    });
-
-    loadCSV('mushroom2.csv', function (data) {
-        const mushrooms2 = parseCSV(data);
-        mushrooms = mushrooms.concat(mushrooms2);
-        console.log('Parsed mushroom2 data:', mushrooms);
-    });
-
     window.predict = function () {
         const form = document.getElementById('mushroomForm');
         const formData = new FormData(form);
@@ -95,17 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
             inputs[key] = value;
         }
 
-        console.log('Form inputs:', inputs);
-
-        const match = mushrooms.find(mushroom => {
-            return Object.entries(inputs).every(([key, value]) => mushroom[key] === value);
+        fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(inputs),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response data:', data); // Log response data for debugging
+            const resultDiv = document.getElementById('result');
+            if (data.result) {
+                resultDiv.textContent = data.result;
+            } else if (data.error) {
+                resultDiv.textContent = 'Error: ' + data.error;
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
         });
-
-        const resultDiv = document.getElementById('result');
-        if (match) {
-            resultDiv.textContent = match['class'] === 'e' ? 'Edible' : 'Poisonous';
-        } else {
-            resultDiv.textContent = 'No match found';
-        }
     };
 });
