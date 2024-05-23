@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Classification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mushroom Classification</h1>
+        <h2>PREDICTION</h2>
+        <p>Determine if the mushroom is edible or poisonous</p>
+        <form id="mushroomForm">
+            <!-- Cap Shape -->
+            <div class="form-group">
+                <label for="capShape">Cap Shape</label>
+                <select id="capShape" name="capShape"></select>
+            </div>
+            <!-- Cap Surface -->
+            <div class="form-group">
+                <label for="capSurface">Cap Surface</label>
+                <select id="capSurface" name="capSurface"></select>
+            </div>
+            <!-- Cap Color -->
+            <div class="form-group">
+                <label for="capColor">Cap Color</label>
+                <select id="capColor" name="capColor"></select>
+            </div>
+            <!-- Bruises -->
+            <div class="form-group">
+                <label for="bruises">Bruises</label>
+                <select id="bruises" name="bruises"></select>
+            </div>
+            <!-- Odor -->
+            <div class="form-group">
+                <label for="odor">Odor</label>
+                <select id="odor" name="odor"></select>
+            </div>
+            <!-- Gill Attachment -->
+            <div class="form-group">
+                <label for="gillAttachment">Gill Attachment</label>
+                <select id="gillAttachment" name="gillAttachment"></select>
+            </div>
+            <!-- Gill Spacing -->
+            <div class="form-group">
+                <label for="gillSpacing">Gill Spacing</label>
+                <select id="gillSpacing" name="gillSpacing"></select>
+            </div>
+            <!-- Gill Size -->
+            <div class="form-group">
+                <label for="gillSize">Gill Size</label>
+                <select id="gillSize" name="gillSize"></select>
+            </div>
+            <!-- Gill Color -->
+            <div class="form-group">
+                <label for="gillColor">Gill Color</label>
+                <select id="gillColor" name="gillColor"></select>
+            </div>
+            <!-- Stalk Shape -->
+            <div class="form-group">
+                <label for="stalkShape">Stalk Shape</label>
+                <select id="stalkShape" name="stalkShape"></select>
+            </div>
+            <!-- Stalk Root -->
+            <div class="form-group">
+                <label for="stalkRoot">Stalk Root</label>
+                <select id="stalkRoot" name="stalkRoot"></select>
+            </div>
+            <!-- Stalk Surface Above Ring -->
+            <div class="form-group">
+                <label for="stalkSurfaceAboveRing">Stalk Surface Above Ring</label>
+                <select id="stalkSurfaceAboveRing" name="stalkSurfaceAboveRing"></select>
+            </div>
+            <!-- Stalk Surface Below Ring -->
+            <div class="form-group">
+                <label for="stalkSurfaceBelowRing">Stalk Surface Below Ring</label>
+                <select id="stalkSurfaceBelowRing" name="stalkSurfaceBelowRing"></select>
+            </div>
+            <!-- Stalk Color Above Ring -->
+            <div class="form-group">
+                <label for="stalkColorAboveRing">Stalk Color Above Ring</label>
+                <select id="stalkColorAboveRing" name="stalkColorAboveRing"></select>
+            </div>
+            <!-- Stalk Color Below Ring -->
+            <div class="form-group">
+                <label for="stalkColorBelowRing">Stalk Color Below Ring</label>
+                <select id="stalkColorBelowRing" name="stalkColorBelowRing"></select>
+            </div>
+            <!-- Veil Type -->
+            <div class="form-group">
+                <label for="veilType">Veil Type</label>
+                <select id="veilType" name="veilType"></select>
+            </div>
+            <!-- Veil Color -->
+            <div class="form-group">
+                <label for="veilColor">Veil Color</label>
+                <select id="veilColor" name="veilColor"></select>
+            </div>
+            <!-- Ring Number -->
+            <div class="form-group">
+                <label for="ringNumber">Ring Number</label>
+                <select id="ringNumber" name="ringNumber"></select>
+            </div>
+            <!-- Ring Type -->
+            <div class="form-group">
+                <label for="ringType">Ring Type</label>
+                <select id="ringType" name="ringType"></select>
+            </div>
+            <!-- Spore Print Color -->
+            <div class="form-group">
+                <label for="sporePrintColor">Spore Print Color</label>
+                <select id="sporePrintColor" name="sporePrintColor"></select>
+            </div>
+            <!-- Population -->
+            <div class="form-group">
+                <label for="population">Population</label>
+                <select id="population" name="population"></select>
+            </div>
+            <!-- Habitat -->
+            <div class="form-group">
+                <label for="habitat">Habitat</label>
+                <select id="habitat" name="habitat"></select>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="predict()">Predict</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
