@@ -24,7 +24,6 @@ value_mappings = {
     'stalkSurfaceBelowRing': {'f': 0, 'y': 1, 'k': 2, 's': 3},
     'stalkColorAboveRing': {'n': 0, 'b': 1, 'c': 2, 'g': 3, 'o': 4, 'p': 5, 'e': 6, 'w': 7, 'y': 8},
     'stalkColorBelowRing': {'n': 0, 'b': 1, 'c': 2, 'g': 3, 'o': 4, 'p': 5, 'e': 6, 'w': 7, 'y': 8},
-    'veilType': {'p': 0, 'u': 1},
     'veilColor': {'n': 0, 'o': 1, 'w': 2, 'y': 3},
     'ringNumber': {'n': 0, 'o': 1, 't': 2},
     'ringType': {'c': 0, 'e': 1, 'f': 2, 'l': 3, 'n': 4, 'p': 5, 's': 6, 'z': 7},
@@ -57,13 +56,12 @@ def predict():
             value_mappings['stalkSurfaceBelowRing'][inputs['stalkSurfaceBelowRing']],
             value_mappings['stalkColorAboveRing'][inputs['stalkColorAboveRing']],
             value_mappings['stalkColorBelowRing'][inputs['stalkColorBelowRing']],
-            value_mappings['veilType'][inputs['veilType']],
             value_mappings['veilColor'][inputs['veilColor']],
             value_mappings['ringNumber'][inputs['ringNumber']],
             value_mappings['ringType'][inputs['ringType']],
             value_mappings['sporePrintColor'][inputs['sporePrintColor']],
             value_mappings['population'][inputs['population']],
-            value_mappings['habitat'][inputs['habitat']],
+            value_mappings['habitat'][inputs['habitat']]
         ]
         prediction = model.predict([input_values])[0]
         result = "Edible" if prediction == 0 else "Poisonous"

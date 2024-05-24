@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
         stalkSurfaceBelowRing: { f: 'fibrous', y: 'scaly', k: 'silky', s: 'smooth' },
         stalkColorAboveRing: { n: 'brown', b: 'buff', c: 'cinnamon', g: 'gray', o: 'orange', p: 'pink', e: 'red', w: 'white', y: 'yellow' },
         stalkColorBelowRing: { n: 'brown', b: 'buff', c: 'cinnamon', g: 'gray', o: 'orange', p: 'pink', e: 'red', w: 'white', y: 'yellow' },
-        veilType: { p: 'partial', u: 'universal' },
         veilColor: { n: 'brown', o: 'orange', w: 'white', y: 'yellow' },
         ringNumber: { n: 'none', o: 'one', t: 'two' },
         ringType: { c: 'cobwebby', e: 'evanescent', f: 'flaring', l: 'large', n: 'none', p: 'pendant', s: 'sheathing', z: 'zone' },
