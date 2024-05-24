@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify, render_template
-import pickle
+import joblib
 import numpy as np
 
 app = Flask(__name__)
 
-# Load the model
-with open('knn_model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+# Load the model using joblib
+model = joblib.load("knn_model.pkl")
 
 # Define the mappings from dropdown values to integers
 value_mappings = {
