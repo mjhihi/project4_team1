@@ -1,0 +1,1350 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Project4_17165060757780' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='mushroom1.csv+ (Multiple Connections)' inline='true' name='federated.0cwpkg202gjk6m147qse80ysmzwc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mushroom1' name='textscan.0weyx4v1oso6f719rcgb70sqyrnu'>
+            <connection class='textscan' directory='C:/Users/domin/Documents/GitHub/project4_team1' filename='mushroom1.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='mushroom2' name='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6'>
+            <connection class='textscan' directory='C:/Users/domin/Documents/GitHub/project4_team1' filename='mushroom2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='class' ordinal='1' />
+            <column datatype='string' name='cap-shape' ordinal='2' />
+            <column datatype='string' name='cap-surface' ordinal='3' />
+            <column datatype='string' name='cap-color' ordinal='4' />
+            <column datatype='boolean' name='bruises' ordinal='5' />
+            <column datatype='string' name='odor' ordinal='6' />
+            <column datatype='boolean' name='gill-attachment' ordinal='7' />
+            <column datatype='string' name='gill-spacing' ordinal='8' />
+            <column datatype='string' name='gill-size' ordinal='9' />
+            <column datatype='string' name='gill-color' ordinal='10' />
+            <column datatype='string' name='population' ordinal='11' />
+            <column datatype='string' name='habitat' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='class' ordinal='1' />
+              <column datatype='string' name='cap-shape' ordinal='2' />
+              <column datatype='string' name='cap-surface' ordinal='3' />
+              <column datatype='string' name='cap-color' ordinal='4' />
+              <column datatype='boolean' name='bruises' ordinal='5' />
+              <column datatype='string' name='odor' ordinal='6' />
+              <column datatype='boolean' name='gill-attachment' ordinal='7' />
+              <column datatype='string' name='gill-spacing' ordinal='8' />
+              <column datatype='string' name='gill-size' ordinal='9' />
+              <column datatype='string' name='gill-color' ordinal='10' />
+              <column datatype='string' name='population' ordinal='11' />
+              <column datatype='string' name='habitat' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6' name='mushroom2.csv' table='[mushroom2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='class' ordinal='1' />
+              <column datatype='string' name='stalk-shape' ordinal='2' />
+              <column datatype='string' name='stalk-root' ordinal='3' />
+              <column datatype='string' name='stalk-surface-above-ring' ordinal='4' />
+              <column datatype='string' name='stalk-surface-below-ring' ordinal='5' />
+              <column datatype='string' name='stalk-color-above-ring' ordinal='6' />
+              <column datatype='string' name='stalk-color-below-ring' ordinal='7' />
+              <column datatype='string' name='veil-type' ordinal='8' />
+              <column datatype='string' name='veil-color' ordinal='9' />
+              <column datatype='string' name='ring-number' ordinal='10' />
+              <column datatype='string' name='ring-type' ordinal='11' />
+              <column datatype='string' name='spore-print-color' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ID (mushroom2.csv)]' value='[mushroom2.csv].[ID]' />
+          <map key='[ID]' value='[mushroom1.csv].[ID]' />
+          <map key='[bruises]' value='[mushroom1.csv].[bruises]' />
+          <map key='[cap-color]' value='[mushroom1.csv].[cap-color]' />
+          <map key='[cap-shape]' value='[mushroom1.csv].[cap-shape]' />
+          <map key='[cap-surface]' value='[mushroom1.csv].[cap-surface]' />
+          <map key='[class (mushroom2.csv)]' value='[mushroom2.csv].[class]' />
+          <map key='[class]' value='[mushroom1.csv].[class]' />
+          <map key='[gill-attachment]' value='[mushroom1.csv].[gill-attachment]' />
+          <map key='[gill-color]' value='[mushroom1.csv].[gill-color]' />
+          <map key='[gill-size]' value='[mushroom1.csv].[gill-size]' />
+          <map key='[gill-spacing]' value='[mushroom1.csv].[gill-spacing]' />
+          <map key='[habitat]' value='[mushroom1.csv].[habitat]' />
+          <map key='[odor]' value='[mushroom1.csv].[odor]' />
+          <map key='[population]' value='[mushroom1.csv].[population]' />
+          <map key='[ring-number]' value='[mushroom2.csv].[ring-number]' />
+          <map key='[ring-type]' value='[mushroom2.csv].[ring-type]' />
+          <map key='[spore-print-color]' value='[mushroom2.csv].[spore-print-color]' />
+          <map key='[stalk-color-above-ring]' value='[mushroom2.csv].[stalk-color-above-ring]' />
+          <map key='[stalk-color-below-ring]' value='[mushroom2.csv].[stalk-color-below-ring]' />
+          <map key='[stalk-root]' value='[mushroom2.csv].[stalk-root]' />
+          <map key='[stalk-shape]' value='[mushroom2.csv].[stalk-shape]' />
+          <map key='[stalk-surface-above-ring]' value='[mushroom2.csv].[stalk-surface-above-ring]' />
+          <map key='[stalk-surface-below-ring]' value='[mushroom2.csv].[stalk-surface-below-ring]' />
+          <map key='[veil-color]' value='[mushroom2.csv].[veil-color]' />
+          <map key='[veil-type]' value='[mushroom2.csv].[veil-type]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-shape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-shape]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-shape</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-surface</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-surface]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-surface</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cap-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cap-color]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>cap-color</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bruises</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[bruises]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>bruises</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>odor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[odor]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>odor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-attachment</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[gill-attachment]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-attachment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-spacing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-spacing]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-spacing</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-size]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-size</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gill-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gill-color]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>gill-color</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>habitat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[habitat]</local-name>
+            <parent-name>[mushroom1.csv]</parent-name>
+            <remote-alias>habitat</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (mushroom2.csv)]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class (mushroom2.csv)]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-shape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-shape]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-shape</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-root</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-root]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-root</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-surface-above-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-surface-above-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-surface-above-ring</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-surface-below-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-surface-below-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-surface-below-ring</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-color-above-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-color-above-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-color-above-ring</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stalk-color-below-ring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stalk-color-below-ring]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>stalk-color-below-ring</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>veil-type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[veil-type]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>veil-type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>veil-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[veil-color]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>veil-color</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ring-number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ring-number]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ring-number</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ring-type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ring-type]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>ring-type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spore-print-color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spore-print-color]</local-name>
+            <parent-name>[mushroom2.csv]</parent-name>
+            <remote-alias>spore-print-color</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID (mushroom2.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='mushroom1.csv' datatype='table' name='[__tableau_internal_object_id__].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mushroom2.csv' datatype='table' name='[__tableau_internal_object_id__].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' role='measure' type='quantitative' />
+      <column caption='Bruises' datatype='boolean' name='[bruises]' role='dimension' type='nominal' />
+      <column caption='Cap-Color' datatype='string' name='[cap-color]' role='dimension' type='nominal' />
+      <column caption='Cap-Shape' datatype='string' name='[cap-shape]' role='dimension' type='nominal' />
+      <column caption='Cap-Surface' datatype='string' name='[cap-surface]' role='dimension' type='nominal' />
+      <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='Gill-Attachment' datatype='boolean' name='[gill-attachment]' role='dimension' type='nominal' />
+      <column caption='Gill-Color' datatype='string' name='[gill-color]' role='dimension' type='nominal' />
+      <column caption='Gill-Size' datatype='string' name='[gill-size]' role='dimension' type='nominal' />
+      <column caption='Gill-Spacing' datatype='string' name='[gill-spacing]' role='dimension' type='nominal' />
+      <column caption='Habitat' datatype='string' name='[habitat]' role='dimension' type='nominal' />
+      <column caption='Odor' datatype='string' name='[odor]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='string' name='[population]' role='dimension' type='nominal' />
+      <column caption='Ring-Number' datatype='string' name='[ring-number]' role='dimension' type='nominal' />
+      <column caption='Ring-Type' datatype='string' name='[ring-type]' role='dimension' type='nominal' />
+      <column caption='Spore-Print-Color' datatype='string' name='[spore-print-color]' role='dimension' type='nominal' />
+      <column caption='Stalk-Color-Above-Ring' datatype='string' name='[stalk-color-above-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Color-Below-Ring' datatype='string' name='[stalk-color-below-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Root' datatype='string' name='[stalk-root]' role='dimension' type='nominal' />
+      <column caption='Stalk-Shape' datatype='string' name='[stalk-shape]' role='dimension' type='nominal' />
+      <column caption='Stalk-Surface-Above-Ring' datatype='string' name='[stalk-surface-above-ring]' role='dimension' type='nominal' />
+      <column caption='Stalk-Surface-Below-Ring' datatype='string' name='[stalk-surface-below-ring]' role='dimension' type='nominal' />
+      <column caption='Veil-Color' datatype='string' name='[veil-color]' role='dimension' type='nominal' />
+      <column caption='Veil-Type' datatype='string' name='[veil-type]' role='dimension' type='nominal' />
+      <column-instance column='[gill-color]' derivation='Attribute' name='[attr:gill-color:nk]' pivot='key' type='nominal' />
+      <column-instance column='[bruises]' derivation='None' name='[none:bruises:nk]' pivot='key' type='nominal' />
+      <column-instance column='[gill-color]' derivation='None' name='[none:gill-color:nk]' pivot='key' type='nominal' />
+      <group caption='Bruises Set' name='[Bruises Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[none:bruises:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/domin/AppData/Local/Temp/TableauTemp/#TableauTemp_0fz5nuz1i1s77v18re3ph0vi7y0t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+            <relation name='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' table='[Extract].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[ID (mushroom2.csv)]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ID]' />
+            <map key='[ID]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[ID]' />
+            <map key='[bruises]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[bruises]' />
+            <map key='[cap-color]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-color]' />
+            <map key='[cap-shape]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-shape]' />
+            <map key='[cap-surface]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[cap-surface]' />
+            <map key='[class (mushroom2.csv)]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[class]' />
+            <map key='[class]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[class]' />
+            <map key='[gill-attachment]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-attachment]' />
+            <map key='[gill-color]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-color]' />
+            <map key='[gill-size]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-size]' />
+            <map key='[gill-spacing]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[gill-spacing]' />
+            <map key='[habitat]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[habitat]' />
+            <map key='[odor]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[odor]' />
+            <map key='[population]' value='[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D].[population]' />
+            <map key='[ring-number]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ring-number]' />
+            <map key='[ring-type]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[ring-type]' />
+            <map key='[spore-print-color]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[spore-print-color]' />
+            <map key='[stalk-color-above-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-color-above-ring]' />
+            <map key='[stalk-color-below-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-color-below-ring]' />
+            <map key='[stalk-root]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-root]' />
+            <map key='[stalk-shape]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-shape]' />
+            <map key='[stalk-surface-above-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-surface-above-ring]' />
+            <map key='[stalk-surface-below-ring]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[stalk-surface-below-ring]' />
+            <map key='[veil-color]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[veil-color]' />
+            <map key='[veil-type]' value='[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B].[veil-type]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8124</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-shape]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-shape</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-surface</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-surface]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-surface</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cap-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cap-color]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>cap-color</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bruises</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[bruises]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>bruises</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>odor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[odor]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>odor</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-attachment</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[gill-attachment]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-attachment</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-spacing</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-spacing]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-spacing</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-size]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-size</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gill-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gill-color]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>gill-color</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>habitat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[habitat]</local-name>
+              <parent-name>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</parent-name>
+              <remote-alias>habitat</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mushroom1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID (mushroom2.csv)]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8124</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class (mushroom2.csv)]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-shape]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-shape</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-root</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-root]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-root</remote-alias>
+              <ordinal>16</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-surface-above-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-surface-above-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-surface-above-ring</remote-alias>
+              <ordinal>17</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-surface-below-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-surface-below-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-surface-below-ring</remote-alias>
+              <ordinal>18</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-color-above-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-color-above-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-color-above-ring</remote-alias>
+              <ordinal>19</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stalk-color-below-ring</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stalk-color-below-ring]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>stalk-color-below-ring</remote-alias>
+              <ordinal>20</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>veil-type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[veil-type]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>veil-type</remote-alias>
+              <ordinal>21</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>veil-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[veil-color]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>veil-color</remote-alias>
+              <ordinal>22</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ring-number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ring-number]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ring-number</remote-alias>
+              <ordinal>23</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ring-type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ring-type]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>ring-type</remote-alias>
+              <ordinal>24</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spore-print-color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spore-print-color]</local-name>
+              <parent-name>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</parent-name>
+              <remote-alias>spore-print-color</remote-alias>
+              <ordinal>25</ordinal>
+              <family>mushroom2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:bruises:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:gill-color:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;r&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;b&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;k&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;u&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;n&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;e&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;o&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;w&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;p&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;g&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;y&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;h&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:gill-color:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;r&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;b&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;k&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;u&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;n&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;e&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;o&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;w&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;p&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;g&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;y&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;h&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mushroom1.csv' id='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D'>
+            <properties context=''>
+              <relation connection='textscan.0weyx4v1oso6f719rcgb70sqyrnu' name='mushroom1.csv' table='[mushroom1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='class' ordinal='1' />
+                  <column datatype='string' name='cap-shape' ordinal='2' />
+                  <column datatype='string' name='cap-surface' ordinal='3' />
+                  <column datatype='string' name='cap-color' ordinal='4' />
+                  <column datatype='boolean' name='bruises' ordinal='5' />
+                  <column datatype='string' name='odor' ordinal='6' />
+                  <column datatype='boolean' name='gill-attachment' ordinal='7' />
+                  <column datatype='string' name='gill-spacing' ordinal='8' />
+                  <column datatype='string' name='gill-size' ordinal='9' />
+                  <column datatype='string' name='gill-color' ordinal='10' />
+                  <column datatype='string' name='population' ordinal='11' />
+                  <column datatype='string' name='habitat' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
+            </properties>
+          </object>
+          <object caption='mushroom2.csv' id='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B'>
+            <properties context=''>
+              <relation connection='textscan.1vvtl190sfyzxp12uk6jj1tqv6v6' name='mushroom2.csv' table='[mushroom2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='class' ordinal='1' />
+                  <column datatype='string' name='stalk-shape' ordinal='2' />
+                  <column datatype='string' name='stalk-root' ordinal='3' />
+                  <column datatype='string' name='stalk-surface-above-ring' ordinal='4' />
+                  <column datatype='string' name='stalk-surface-below-ring' ordinal='5' />
+                  <column datatype='string' name='stalk-color-above-ring' ordinal='6' />
+                  <column datatype='string' name='stalk-color-below-ring' ordinal='7' />
+                  <column datatype='string' name='veil-type' ordinal='8' />
+                  <column datatype='string' name='veil-color' ordinal='9' />
+                  <column datatype='string' name='ring-number' ordinal='10' />
+                  <column datatype='string' name='ring-type' ordinal='11' />
+                  <column datatype='string' name='spore-print-color' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' table='[Extract].[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[ID]' />
+              <expression op='[ID (mushroom2.csv)]' />
+            </expression>
+            <first-end-point object-id='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' />
+            <second-end-point object-id='mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column-instance column='[class]' derivation='Count' name='[cnt:class:qk]' pivot='key' type='quantitative' />
+            <column caption='Gill-Size' datatype='string' name='[gill-size]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='None' name='[none:class (mushroom2.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[gill-size]' derivation='None' name='[none:gill-size:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class:qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-size:nk]</cols>
+      </table>
+      <simple-id uuid='{3771F89B-0251-4B6C-B8F0-945248B214EA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='Count' name='[cnt:class (mushroom2.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Gill-Color' datatype='string' name='[gill-color]' role='dimension' type='nominal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gill-color]' derivation='None' name='[none:gill-color:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class (mushroom2.csv):qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:gill-color:nk]</cols>
+      </table>
+      <simple-id uuid='{FF43DC0B-FA1D-4F20-8661-32E220433AE8}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mushroom1.csv+ (Multiple Connections)' name='federated.0cwpkg202gjk6m147qse80ysmzwc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwpkg202gjk6m147qse80ysmzwc'>
+            <column caption='Bruises' datatype='boolean' name='[bruises]' role='dimension' type='nominal' />
+            <column caption='Class (Mushroom2.Csv)' datatype='string' name='[class (mushroom2.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='Count' name='[cnt:class (mushroom2.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bruises]' derivation='None' name='[none:bruises:nk]' pivot='key' type='nominal' />
+            <column-instance column='[class (mushroom2.csv)]' derivation='None' name='[none:class (mushroom2.csv):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffbe7d' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cwpkg202gjk6m147qse80ysmzwc].[cnt:class (mushroom2.csv):qk]</rows>
+        <cols>[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:bruises:nk]</cols>
+      </table>
+      <simple-id uuid='{8777B9AC-D40F-42A7-8EFC-926B9D41AD30}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Gill Size and Edibility' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='Gill Color and Edibility' captured-sheet='Sheet 2' id='2' />
+                  <story-point caption='Bruises and Edibility' captured-sheet='Sheet 3' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{5BB75D32-1630-4439-8756-CD311B4A02CC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BFC1BD0-0457-4E46-AF44-5628A6F717FD}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E6F42A2-AB80-4F1D-A173-9493E7615383}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card pane-specification-id='0' param='[federated.0cwpkg202gjk6m147qse80ysmzwc].[none:class (mushroom2.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0123BC11-ED8B-4FCA-A95C-C27E87D86C46}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{95F3601C-DA38-40D8-83DD-0FB03F960B23}' />
+    </window>
+  </windows>
+</workbook>

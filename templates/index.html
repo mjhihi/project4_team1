@@ -101,7 +101,14 @@
             </div>
         </form>
         <div id="result"></div>
+        
+        <h2>Visualization</h2>
+        <img src="{{ url_for('static', filename='class_bruises.png') }}" alt="Class vs. Bruises" class="standard-image-size">
+        <img src="{{ url_for('static', filename='class_color1.png') }}" alt="Class vs. Gill Color Part 1" class="standard-image-size">
+        <img src="{{ url_for('static', filename='class_color2.png') }}" alt="Class vs. Gill Color Part 2" class="standard-image-size">
+        <img src="{{ url_for('static', filename='class_gillSize.png') }}" alt="Class vs. Gill Size" class="standard-image-size">
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
+
