@@ -564,8 +564,8 @@
       <group caption='Bruises Set' name='[Bruises Set]' name-style='unqualified' user:ui-builder='filter-group'>
         <groupfilter function='member' level='[none:bruises:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </group>
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/domin/AppData/Local/Temp/TableauTemp/#TableauTemp_0fz5nuz1i1s77v18re3ph0vi7y0t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/domin/AppData/Local/Temp/TableauTemp/#TableauTemp_1224wk90se0qhm1dxzkej1gxetzl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/28/2024 10:36:06 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D' table='[Extract].[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]' type='table' />
@@ -612,6 +612,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>8124</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>class</remote-name>
@@ -626,6 +627,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>cap-shape</remote-name>
@@ -640,6 +642,7 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>cap-surface</remote-name>
@@ -654,6 +657,7 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>cap-color</remote-name>
@@ -668,6 +672,7 @@
               <approx-count>10</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>bruises</remote-name>
@@ -681,6 +686,7 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>odor</remote-name>
@@ -695,6 +701,7 @@
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gill-attachment</remote-name>
@@ -708,6 +715,7 @@
               <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gill-spacing</remote-name>
@@ -722,6 +730,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gill-size</remote-name>
@@ -736,6 +745,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>gill-color</remote-name>
@@ -750,6 +760,7 @@
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>population</remote-name>
@@ -764,6 +775,7 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>habitat</remote-name>
@@ -778,6 +790,7 @@
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom1.csv_C2D61906789D4F7A85BB31A8A904D36D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ID</remote-name>
@@ -791,6 +804,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>8124</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>class</remote-name>
@@ -805,6 +819,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-shape</remote-name>
@@ -819,6 +834,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-root</remote-name>
@@ -833,6 +849,7 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-surface-above-ring</remote-name>
@@ -847,6 +864,7 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-surface-below-ring</remote-name>
@@ -861,6 +879,7 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-color-above-ring</remote-name>
@@ -875,6 +894,7 @@
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>stalk-color-below-ring</remote-name>
@@ -889,6 +909,7 @@
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>veil-type</remote-name>
@@ -903,6 +924,7 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>veil-color</remote-name>
@@ -917,6 +939,7 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ring-number</remote-name>
@@ -931,6 +954,7 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ring-type</remote-name>
@@ -945,6 +969,7 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>spore-print-color</remote-name>
@@ -959,6 +984,7 @@
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mushroom2.csv_C24A83DF78664E69A31ADC9137A91C6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1236,7 +1262,7 @@
             <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
             <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
             <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
-              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='Gill Size and Edibility' captured-sheet='Sheet 1' id='1' />
                   <story-point caption='Gill Color and Edibility' captured-sheet='Sheet 2' id='2' />
@@ -1256,7 +1282,7 @@
       <simple-id uuid='{5BB75D32-1630-4439-8756-CD311B4A02CC}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows source-height='44'>
     <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
@@ -1267,10 +1293,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='30'>
@@ -1285,7 +1311,7 @@
       </cards>
       <simple-id uuid='{7BFC1BD0-0457-4E46-AF44-5628A6F717FD}' />
     </window>
-    <window class='worksheet' name='Sheet 2'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='106'>
@@ -1341,9 +1367,9 @@
       </cards>
       <simple-id uuid='{0123BC11-ED8B-4FCA-A95C-C27E87D86C46}' />
     </window>
-    <window class='dashboard' maximized='true' name='Story 1'>
+    <window class='dashboard' name='Story 1'>
       <viewpoints />
-      <active id='-1' />
+      <active id='5' />
       <simple-id uuid='{95F3601C-DA38-40D8-83DD-0FB03F960B23}' />
     </window>
   </windows>
