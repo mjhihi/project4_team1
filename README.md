@@ -1,1 +1,2 @@
 # project4_team1
+We utilized the dataset from https://www.kaggle.com/datasets/uciml/mushroom-classification to create a dashboard that can predict mushroom edibility. We split the data in order to showcase PostgeSQL skills, because no other helpful datasets existed that were not in some way drawing off of the dataset we chose. In order to run the dashboard, enter "python app.py" into the terminal. The dashboard gives a list of dropdown menu's in the first tab in order to predict if a mushroom is poisonous or edible. The second tab shows some visualizations of the data.
